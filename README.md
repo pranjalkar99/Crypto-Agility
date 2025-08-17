@@ -5,5 +5,5 @@ Available in **Linux** and **Windows** versions.
 
 ## GitHub Repositories
 
-- Linux TLS Analyzer: https://github.com/kpqc-cryptocraft/Crypto-Agility/tree/Linux
-- Windows TLS Analyzer: https://github.com/kpqc-cryptocraft/Crypto-Agility/tree/windows
+- Linux: https://github.com/kpqc-cryptocraft/Crypto-Agility/tree/Linux
+- Windows: https://github.com/kpqc-cryptocraft/Crypto-Agility/tree/windows
