@@ -54,7 +54,7 @@ Included information:
 
 ## Setup/Installation 
 
-### windows
+### 1) windows
 It is compatible with 64-bit Windows 10/11 environments, and administrator privileges are required only for packet capture operations.
 
 - We provide a precompiled .exe, but you can also run the binary directly as shown below. Replace the placeholders with your own PATH settings as needed.
@@ -79,7 +79,7 @@ Npcap is a modern packet capture/injection driver and library for Windows, devel
 
 
 
-### linux
+### 2) linux
 
 
 ## Bibliography 
