@@ -64,7 +64,7 @@ It is compatible with 64-bit Windows 10/11 environments, and administrator privi
 
 - We provide a precompiled .exe, but you can also run the binary directly as shown below. Replace the placeholders with your own PATH settings as needed.
 ```
-cl windows_tls_capture.c /I"npcap-sdk-1.15\Include" /link /LIBPATH:"npcap-sdk-1.15\Lib\x64" wpcap.lib packet.lib ws2_32.lib
+cl windows_tls_capture.c /MD /I"C:\Program Files\OpenSSL-Win64\include" /I".\npcap-sdk-1.15\Include" /I".\libs\xlsxwriter" /link /LIBPATH:"C:\Program Files\OpenSSL-Win64\lib\VC\x64\MD" /LIBPATH:".\npcap-sdk-1.15\Lib\x64" /LIBPATH:".\libs" ws2_32.lib wpcap.lib packet.lib libssl.lib libcrypto.lib xlsxwriter.lib z.lib
 ```
 
 #### System Requirements
