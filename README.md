@@ -48,7 +48,7 @@ Security Level Indicators
 ```
 
 ### Excel Report File
-Filename: TLS_Quantum_Vulnerability_Report_YYYYMMDD_HHMMSS.xlsx
+Filename: [TLS_Quantum_Vulnerability_Report_YYYYMMDD_HHMMSS.xlsx](output.csv)
 Included information:
 - Session #, SNI, TLS Version, Security Level
 - Cipher Suite, Vulnerable Field, Vulnerability Level
