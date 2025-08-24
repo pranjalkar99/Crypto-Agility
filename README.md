@@ -15,7 +15,7 @@ This framework collects and analyzes TLS packets to automatically identify the c
 - Automated Excel report generation (.csv or .xlsx)
 - Multi-interface support
 
-
+- We plan to add macOS support and a GUI in future updates.
 
 ## Security Assessment Criteria
 
