@@ -66,9 +66,13 @@ cl windows_tls_capture.c /I"npcap-sdk-1.15\Include" /link /LIBPATH:"npcap-sdk-1.
 ```
 
 #### System Requirements
+- Development Language: C  
 - Windows 10/11 (64-bit)
 - x64 Native Tools Command Prompt (Visual Studio 2022 Community Edition)
 - Win64 OpenSSL
+- Source File: windows_tls_capture.c  
+- Compiled Binary: windows_tls_capture.exe  
+- Dependencies: Npcap SDK, OpenSSL, libxlsxwriter, zlib
 
 #### Installing openSSL 
 We use OpenSSL to extract and analyze cryptographic artifacts such as certificates and keys, enabling deeper inspection that goes beyond what plain packet capture can provide.
@@ -80,6 +84,8 @@ Use the “[x64 Native Tools Command Prompt for VS](https://visualstudio.microso
 #### npcap 
 Npcap is a modern packet capture/injection driver and library for Windows, developed by the Nmap Project. It provides the Pcap API on top of an NDIS 6 driver and supports raw capture, kernel‑level BPF filtering, loopback capture, and packet injection. In our project, the Npcap library is included in the runtime environment, so no separate installation is required.
 
+#### libxlsxwriter
+We support Excel features on Windows to improve readability. This functionality is also included in the runtime environment.
 
 ### 2) linux
 
