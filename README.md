@@ -52,8 +52,6 @@ Included information:
 - Certificate Issuer, Expiry Date, Public Key Algorithm
 - Migration Required, Overall Assessment
 
-
-
 ## Setup/Installation 
 
 ### windows
@@ -68,11 +66,11 @@ cl windows_tls_capture.c /I"npcap-sdk-1.15\Include" /link /LIBPATH:"npcap-sdk-1.
 - Windows 10/11 (64-bit)
 - x64 Native Tools Command Prompt (Visual Studio 2022 Community Edition)
 - Win64 OpenSSL
-- 
+
 #### Installing openSSL 
 We use OpenSSL to extract and analyze cryptographic artifacts such as certificates and keys, enabling deeper inspection that goes beyond what plain packet capture can provide.
 - Install OpenSSL on Windows (64-bit) using the [official Win64 installer](https://slproweb.com/products/Win32OpenSSL.html), add its bin directory to your system PATH (if not done automatically), and verify with openssl version. For convenience, use the commonly distributed Windows binaries.
-- 
+
 #### Installing x64 Native Tools Command Prompt
 Use the “[x64 Native Tools Command Prompt for VS](https://visualstudio.microsoft.com/ko/vs/pricing/?tab=individual)” to ensure a correct 64-bit C/C++ toolchain (MSVC, linker, headers/libraries) is preconfigured for your build, preventing architecture mismatches and link-time errors.
 
