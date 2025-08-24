@@ -91,6 +91,7 @@ We support Excel features on Windows to improve readability. This functionality 
 
 ### 2) linux
 
+월요일에 추가로 넣겠습니다....
 
 ## Bibliography 
 When referring to this framework in academic literature, please consider using the following bibTeX excerpt:
