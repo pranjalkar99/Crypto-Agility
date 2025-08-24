@@ -31,6 +31,8 @@ Security Level Indicators
 
 ## Output
 ### Real-time Output Example
+
+```
 [14:32:15] TLS Connection #1
 [+] 192.168.1.100:54321 → 142.250.191.14:443
 └─ Server Name (SNI): www.google.com
@@ -43,6 +45,7 @@ Security Level Indicators
 [INFO] Certificate Issuer: Google Trust Services LLC
 [INFO] Certificate expires: 2024-12-15 (89 days)
 [INFO] Public Key: ECDSA
+```
 
 ### Excel Report File
 Filename: TLS_Quantum_Vulnerability_Report_YYYYMMDD_HHMMSS.xlsx
@@ -76,7 +79,6 @@ Use the “[x64 Native Tools Command Prompt for VS](https://visualstudio.microso
 
 #### npcap 
 Npcap is a modern packet capture/injection driver and library for Windows, developed by the Nmap Project. It provides the Pcap API on top of an NDIS 6 driver and supports raw capture, kernel‑level BPF filtering, loopback capture, and packet injection. In our project, the Npcap library is included in the runtime environment, so no separate installation is required.
-
 
 
 ### 2) linux
