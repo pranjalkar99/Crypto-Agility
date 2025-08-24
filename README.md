@@ -4,7 +4,7 @@ An automated tool for analyzing quantum-vulnerable TLS configurations through pa
 
 ## Introduction
 
-This framework collects and analyzes TLS packets to automatically identify the cipher suites and certificate structures used by common applications such as browsers and messaging platforms. Based on this analysis, it classifies whether each application relies on quantum-vulnerable algorithms or relatively secure ones, while emphasizing the associated security risks. In addition, it provides a scalable foundation for the future integration of Post-Quantum Cryptography (PQC) mechanisms. The goals of this framework are as follows.
+This framework collects and analyzes TLS packets to automatically identify the cipher suites and certificate structures used by common applications such as browsers and messaging platforms. Based on this analysis, it classifies whether each application relies on quantum-vulnerable algorithms or relatively secure ones, while emphasizing the associated security risks. In addition, it provides a scalable foundation for the future integration of Post-Quantum Cryptography (PQC) mechanisms. The goals of this framework are as follows:
 
 - Real-time/offline TLS traffic capture and analysis
 - Post-Quantum Cryptography (PQC) algorithm prototype detection
