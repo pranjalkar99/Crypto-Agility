@@ -48,13 +48,15 @@ Security Level Indicators
 ```
 
 ### Excel Report File
-Filename: [TLS_Quantum_Vulnerability_Report_YYYYMMDD_HHMMSS.xlsx](output.csv)
+We provide report outputs as CSV files to facilitate downstream processing. An example CSV is included in the repository.
+
+Filename: [TLS_Quantum_Vulnerability_Report_YYYYMMDD_HHMMSS.csv](output.csv)
+
 Included information:
 - Session #, SNI, TLS Version, Security Level
 - Cipher Suite, Vulnerable Field, Vulnerability Level
 - Certificate Issuer, Expiry Date, Public Key Algorithm
 - Migration Required, Overall Assessment
-
 ## Setup/Installation 
 
 ### 1) windows
