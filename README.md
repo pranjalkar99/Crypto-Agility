@@ -24,6 +24,7 @@ Security Level Indicators
 - H = High (High quantum resistance)
 - M = Medium (Partial quantum vulnerability)
 - L = Low (Completely vulnerable to quantum attacks)
+Certificate Level
 - T = Required (Certificate renewal required within 90 days)
 - F = Not Required (Certificate renewal not required)
 
