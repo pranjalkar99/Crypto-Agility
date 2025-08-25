@@ -97,7 +97,7 @@ We support Excel features on Windows to improve readability. This functionality 
 ## Bibliography 
 When referring to this framework in academic literature, please consider using the following bibTeX excerpt:
 ```
-@misc{PQM4,
+@misc{cryptocraft_Crypto-Agility,
   title = {Crypto Agility:  TLS Quantum Vulnerability Analyzer},
   author = {subeen Cho and Yulim Hyoung and Hagyeong Kim and Hyunji Kim and Minjoo Sim and hwajeong Seo},
   note = {\url{https://github.com/kpqc-cryptocraft/Crypto-Agility.git}}
