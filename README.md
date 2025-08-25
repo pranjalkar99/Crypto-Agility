@@ -18,7 +18,7 @@ This framework collects and analyzes TLS packets to automatically identify the c
 | CA detection | ✅ |
 | Report(.csv) Generation | ✅ |
 | SNI (domain) Filtering | ✅ |
-| Cross‑Platform Support – Windows | Windows✅ Linux ✅  macOS 🛠️ In progress |
+| Cross‑Platform Support – Windows | Windows✅ \n Linux ✅ \n macOS 🛠️ In progress |
 | GUI Support | 🛠️ In progress |
 
 - We plan to add macOS support and a GUI in future updates.
