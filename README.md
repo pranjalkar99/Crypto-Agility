@@ -96,10 +96,17 @@ Npcap is a modern packet capture/injection driver and library for Windows, devel
 We support Excel features on Windows to improve readability. This functionality is also included in the runtime environment.
 
 ### 2) linux
+It is compatible with Kali Linux, Ubuntu 18.04+, Debian 10+ environments, and root privileges are required only for packet capture operations.
+
+- We provide a precompiled .exe, but you can also run the binary directly as shown below.
+
+```
+gcc src/Kali_tls_capture.c -o tls_capture -lpcap -lssl -lcrypto
+```
 
 #### System Requirements
 - Kali Linux, Ubuntu 18.04+, Debian 10+ or compatible distributions
-- Root privileges (for packet capture)
+- Root privileges (for packet capture only)
 - Minimum 100MB disk space
 - Network interface access
 - Source File: Kali_tls_capture.c
@@ -108,7 +115,27 @@ We support Excel features on Windows to improve readability. This functionality 
 - Dependencies: libpcap, OpenSSL
 
 #### Installing packages
+- libpcap0.8 — In this framework, it is used as the primary ingestion layer to capture and collect packets from live interfaces and PCAP files, leveraging the portable pcap_* API as-is.
+- libssl3 — In this framework, it is used to parse/verify TLS handshakes, cipher suites, and certificates, and to run optional TLS tests; TLS 1.3/DTLS are provided via libssl and core cryptographic primitives via libcrypto.
+- libc6 — In this framework, it is used as the standard runtime (glibc) that capture/analysis modules depend on across Linux, providing system-call, memory/threading, and networking APIs.
 
+```
+sudo apt update
+sudo apt install -y libpcap0.8 libssl3 libc6
+sudo cp Kali_tls_capture /usr/local/bin/tls_analyzer
+sudo chmod +x /usr/local/bin/tls_analyzer
+```
+
+#### Usage
+- For real-time packet capture, set Execution Permissions and run it using the following sudo command.
+
+```
+//set execution permissions
+chmod +x Kali_tls_capture
+
+// Usage
+sudo ./Kali_tls_capture [options]
+```
 
 ## Framework-Supported TLS Key Exchange, Signatures, and Cipher Suites
 
