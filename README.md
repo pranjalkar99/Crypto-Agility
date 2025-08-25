@@ -239,5 +239,4 @@ When referring to this framework in academic literature, please consider using t
 }
 ```
 
-[![Watch the demp](./Run-Prompt.gif)]
-(https://github.com/kpqc-cryptocraft/Crypto-Agility/blob/main/Run%20Prompt.mp4)
+[![Watch the demo](./Run-Prompt.gif)](https://github.com/kpqc-cryptocraft/Crypto-Agility/blob/main/Run%20Prompt.mp4)
