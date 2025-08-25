@@ -97,7 +97,18 @@ We support Excel features on Windows to improve readability. This functionality 
 
 ### 2) linux
 
-월요일에 추가로 넣겠습니다....
+#### System Requirements
+- Kali Linux, Ubuntu 18.04+, Debian 10+ or compatible distributions
+- Root privileges (for packet capture)
+- Minimum 100MB disk space
+- Network interface access
+- Source File: Kali_tls_capture.c
+- Compiled Binary: Kali_tls_capture
+- Development Language: C
+- Dependencies: libpcap, OpenSSL
+
+#### Installing packages
+
 
 ## Framework-Supported TLS Key Exchange, Signatures, and Cipher Suites
 
