@@ -47,7 +47,7 @@ Security Level Indicators
 [INFO] Public Key: ECDSA
 ```
 
-### Excel Report File
+### Report File
 We provide report outputs as CSV files to facilitate downstream processing. An example CSV is included in the repository.
 
 Filename: [TLS_Quantum_Vulnerability_Report_YYYYMMDD_HHMMSS.csv](output.csv)
