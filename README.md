@@ -137,6 +137,7 @@ We support Excel features on Windows to improve readability. This functionality 
 
 ### Cipher Suites
 - TLS 1.2
+
 | Hex ID | Suite Name |
 |--------|------------|
 | `0xC02F` | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 |
