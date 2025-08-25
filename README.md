@@ -239,4 +239,4 @@ When referring to this framework in academic literature, please consider using t
 }
 ```
 
-[![Watch the demp](./Crypto-Agility/Run Prompt.gif)](./Crypto-Agility/Run Prompt.mp4)
+[![Watch the demp](./Crypto-Agility/Run-Prompt.gif)](./Crypto-Agility/Run Prompt.mp4)
