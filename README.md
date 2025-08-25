@@ -6,14 +6,20 @@ An automated tool for analyzing quantum-vulnerable TLS configurations through pa
 
 This framework collects and analyzes TLS packets to automatically identify the cipher suites and certificate structures used by common applications such as browsers and messaging platforms. Based on this analysis, it classifies whether each application relies on quantum-vulnerable algorithms or relatively secure ones, while emphasizing the associated security risks. In addition, it provides a scalable foundation for the future integration of Post-Quantum Cryptography (PQC) mechanisms. The goals of this framework are as follows:
 
-- Real-time/offline TLS traffic capture and analysis
-- Post-Quantum Cryptography (PQC) algorithm prototype detection
-- ML-KEM (Kyber), Falcon, SPHINCS+, ML-DSA prototype support
-- TLS 1.0-1.3 protocol quantum vulnerability assessment
-- SNI filtering for specific domain analysis
-- X.509 certificate inspection and expiry analysis
-- Automated Excel report generation (.csv or .xlsx)
-- Multi-interface support
+
+| Feature | Status |
+|---|---|
+| Free Distribution | ✅ |
+| Real‑time Support (live capture) | ✅ |
+| Offline Support (captured packets) | ✅ |
+| Hybrid PQC Detection | ✅ |
+| QV Detection | ✅ |
+| Cipher Suite Detection | ✅ |
+| CA detection | ✅ |
+| Report(.csv) Generation | ✅ |
+| SNI (domain) Filtering | ✅ |
+| Cross‑Platform Support – Windows | Windows✅ Linux ✅  macOS 🛠️ In progress |
+| GUI Support | 🛠️ In progress |
 
 - We plan to add macOS support and a GUI in future updates.
 
