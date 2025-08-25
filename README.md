@@ -94,6 +94,92 @@ We support Excel features on Windows to improve readability. This functionality 
 
 월요일에 추가로 넣겠습니다....
 
+## Framework-Supported TLS Key Exchange, Signatures, and Cipher Suites
+
+### Key exchange
+| Category | Algorithm | Identifier (Hex) |
+|----------|------------|------------------|
+| **TLS 1.3 Traditional** | X25519 | `0x001D` |
+| | X448 | `0x001E` |
+| | secp256r1 | `0x0017` |
+| | secp384r1 | `0x0018` |
+| | secp521r1 | `0x0019` |
+| | ffdhe2048 | `0x0100` |
+| | ffdhe3072 | `0x0101` |
+| **Hybrid PQC (ML-KEM + ECDHE)** | X25519Kyber512Draft00 | `0x0768` |
+| | X25519Kyber768Draft00 | `0x0769` |
+| | X25519Kyber1024Draft00 | `0x076A` |
+| | X25519MLKEM512 | `0x6399` |
+| | X25519MLKEM768 | `0x639A` |
+| **Pure PQC (ML-KEM)** | ML-KEM-512 | `0x023A` |
+| | ML-KEM-768 | `0x023B` |
+| | ML-KEM-1024 | `0x023C` |
+
+### Signatures
+| Category | Algorithm | Identifier (Hex) |
+|----------|------------|------------------|
+| **RSASSA-PSS** | RSA-PSS-SHA256 | `0x0804` |
+| | RSA-PSS-SHA384 | `0x0805` |
+| | RSA-PSS-SHA512 | `0x0806` |
+| **EdDSA** | Ed25519 | `0x0807` |
+| | Ed448 | `0x0808` |
+| **RSASSA-PKCS1 v1.5** | RSA-PKCS1-SHA256 | `0x0401` |
+| | RSA-PKCS1-SHA384 | `0x0501` |
+| | RSA-PKCS1-SHA512 | `0x0601` |
+| **ECDSA** | ECDSA-SHA256 | `0x0403` |
+| | ECDSA-SHA384 | `0x0503` |
+| | ECDSA-SHA512 | `0x0603` |
+| **Legacy** | RSA-PKCS1-SHA1 | `0x0201` |
+| | ECDSA-SHA1 | `0x0203` |
+| **PQC (ML-DSA)** | ML-DSA-44 | `0x0B01` |
+| | ML-DSA-65 | `0x0B02` |
+| | ML-DSA-87 | `0x0B03` |
+
+### Cipher Suites
+- TLS 1.2
+| Hex ID | Suite Name |
+|--------|------------|
+| `0xC02F` | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 |
+| `0xC030` | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 |
+| `0xC02B` | TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 |
+| `0xC02C` | TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 |
+| `0x002F` | TLS_RSA_WITH_AES_128_CBC_SHA |
+| `0x0035` | TLS_RSA_WITH_AES_256_CBC_SHA |
+| `0xC013` | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA |
+| `0xC014` | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA |
+| `0xCCA8` | TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 |
+| `0xCCA9` | TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 |
+
+- TLS 1.3
+
+| Hex ID | Suite Name |
+|--------|------------|
+| `0x1301` | TLS_AES_128_GCM_SHA256 |
+| `0x1302` | TLS_AES_256_GCM_SHA384 |
+| `0x1303` | TLS_CHACHA20_POLY1305_SHA256 |
+| `0x1304` | TLS_AES_128_CCM_SHA256 |
+| `0x1305` | TLS_AES_128_CCM_8_SHA256 |
+
+- TLS 1.3 Hybrid PQC Suites (Examples)
+
+| Hex ID | Suite Name |
+|--------|------------|
+| `0x2F01` | TLS_ML_KEM_512_X25519_AES_128_GCM_SHA256 |
+| `0x2F02` | TLS_ML_KEM_768_X25519_AES_256_GCM_SHA384 |
+| `0x2F03` | TLS_ML_KEM_1024_X448_CHACHA20_POLY1305_SHA256 |
+| `0x2F04` | TLS_ML_KEM_512_P256_AES_128_GCM_SHA256 |
+| `0x2F05` | TLS_ML_KEM_768_P384_AES_256_GCM_SHA384 |
+| `0x2F06` | TLS_ML_KEM_1024_P521_CHACHA20_POLY1305_SHA256 |
+| `0x2F10` | TLS_HQC_128_X25519_AES_128_GCM_SHA256 |
+| `0x2F11` | TLS_HQC_192_X25519_AES_256_GCM_SHA384 |
+| `0x2F12` | TLS_HQC_256_X448_CHACHA20_POLY1305_SHA256 |
+| `0x2F13` | TLS_HQC_128_P256_AES_128_GCM_SHA256 |
+| `0x2F14` | TLS_HQC_192_P384_AES_256_GCM_SHA384 |
+| `0x2F15` | TLS_HQC_256_P521_CHACHA20_POLY1305_SHA256 |
+| `0x2F20` | TLS_FALCON_512_ECDHE_P256_AES_128_GCM_SHA256 |
+| `0x2F21` | TLS_FALCON_1024_ECDHE_P384_AES_256_GCM_SHA384 |
+| `0x2F30` | TLS_SPHINCS_SHA256_128S_ECDHE_P256_AES_128_GCM |
+| `0x2F31` | TLS_SPHINCS_SHAKE256_128F_ECDHE_P384_AES_256_GCM |
 ## Bibliography 
 When referring to this framework in academic literature, please consider using the following bibTeX excerpt:
 ```
