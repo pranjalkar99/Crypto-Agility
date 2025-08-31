@@ -238,13 +238,5 @@ sudo ./Kali_tls_capture [options]
 
 
 
-//## Bibliography 
-//When referring to this framework in academic literature, please consider using the following bibTeX excerpt:
-//```
-//@misc{craft_CA,
-//  title = {Crypto Agility:  TLS Quantum Vulnerability Analyzer},
-//  author = {Subeen Cho, Yulim Hyoung, Hagyeong Kim, Minjoo Sim, Anupam Chattopadhyay, Hwajeong Seo, and Hyunji Kim,},
-//  note = {\url{https://github.com/kpqc-cryptocraft/Crypto-Agility.git}}
-//}
-//```
+
 
